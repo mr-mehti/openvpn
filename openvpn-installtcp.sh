@@ -160,7 +160,7 @@ if [[ ! -e /etc/openvpn/server/server.conf ]]; then
 	echo "Which protocol should OpenVPN use?"
 	echo "   1) UDP (recommended)"
 	echo "   2) TCP"
-	protocol=tcp
+	protocol=udp
 	port="1194"
 	dns=3
 	echo
@@ -527,3 +527,10 @@ else
 				echo
 				echo "OpenVPN removal aborted!"
 			fi
+			exit
+		;;
+		4)
+			exit
+		;;
+	esac
+fi
