@@ -282,6 +282,8 @@ server 10.8.0.0 255.255.255.0" > /etc/openvpn/server/server.conf
 		;;
 	esac
 	echo "keepalive 10 120
+client-to-client
+duplicate-cn
 cipher AES-256-CBC
 user nobody
 group $group_name
