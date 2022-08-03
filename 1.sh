@@ -1,5 +1,5 @@
-sudo chmod +x /root/openvpn/openvpn-install.sh && sudo chmod +x /root/openvpn/requirement.sh && sudo chmod +x /root/openvpn/shadow.sh && sudo chmod +x /root/openvpn/status.sh && sudo /root/openvpn/requirement.sh
-cd /root/openvpn && ./openvpn-install.sh && ./shadow.sh
+sudo chmod +x /root/openvpn/openvpn-install.sh && sudo chmod +x /root/openvpn/requirement.sh && sudo chmod +x /root/openvpn/status.sh && sudo /root/openvpn/requirement.sh
+cd /root/openvpn && ./openvpn-install.sh
 echo "[Unit]
 Description=Job that runs your user script
 
