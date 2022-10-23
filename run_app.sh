@@ -1,1 +1,1 @@
-python3 -u /root/openvpn/app.py &
+python3 /root/openvpn/app.py &
