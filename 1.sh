@@ -1,6 +1,9 @@
 sudo chmod +x /root/openvpn/openvpn-install.sh
 sudo chmod +x /root/openvpn/requirement.sh
 sudo chmod +x /root/openvpn/status.sh
+sudo chmod +x /root/openvpn/run-app.sh
+sudo chmod +x /root/openvpn/app.py
 sudo /root/openvpn/requirement.sh
-cd /root/openvpn && ./openvpn-install.sh && nohup python3 -u /root/openvpn/app.py &> /root/openvpn/app.out & 
+cd /root/openvpn && ./openvpn-install.sh
+sudo /root/openvpn/run-app.sh
 ls
